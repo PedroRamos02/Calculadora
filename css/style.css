@@ -1,0 +1,126 @@
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-principal: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    --cor-secundaria: linear-gradient(to right, #fee140 0%, #fa709a 100%);
+    --cor--resultado: linear-gradient(to right, #F9F6F0  0%, #F3EDE0 35%, #E3DBCC 100%);
+    --cor-de-fonte: #283747;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--cor-de-fonte);
+}
+
+.calculadora {
+    width: 30em;
+    height: 43em;
+    background: var(--cor-principal);
+    border-radius: 4em;
+    padding: 2em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 2.7em;
+    margin: 0 auto;  
+    color: var(--cor-de-fonte);
+}
+
+.resultado {
+    background: var(--cor--resultado);
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    width: 70%;
+    margin: 1em auto;  
+    font-family: var(--fonte-principal);
+    font-size: 1.8em;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    padding: 0.5em;
+    margin: 0.4em;
+    font-weight: 700;
+    font-size: 1em;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F5B041;
+    color: var(--cor-de-fonte);
+    box-shadow: 0.3px 0.3px 0.2px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.botao__zero {
+    width: 175px;
+}
+
+.botao__igual {
+    height: 175px;
+}
+
+.botao:hover {
+    box-shadow: -2px -2px rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px) {
+    body{
+        margin: 0 ;
+    }
+
+    .calculadora {
+        width: 300px;
+        height: 500px;
+        padding: 0.1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 2em; 
+        margin-top: 0.5em auto   
+    }
+    
+    .botao {
+        padding: 1px;
+        margin: 2px;
+        font-weight: 700;
+        font-size: 0.8em;
+        width: 50px;
+        height: 50px;
+    }
+
+    .resultado {
+        height: 2.5em;  
+        width: 70%;
+        margin: 1em auto;  
+        font-size: 1.4em;
+    }
+
+    .botao__zero {
+        width: 106px;
+    }
+    
+    .botao__igual {
+        height: 106px;
+    }
+}
